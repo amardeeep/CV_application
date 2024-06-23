@@ -1,8 +1,8 @@
 function Input(props){
     return (
         <div className="Input">
-            <label htmlFor="">{props.name}</label>
-            <input type={props.type} value={props.name} />
+            <label htmlFor="">{(props.name).toUpperCase()} : </label>
+            <input type={props.type} name={props.name} value={props.value} disabled={props.disabled?true:false} onChange={props.onChange} />
         </div>
     )
 }
